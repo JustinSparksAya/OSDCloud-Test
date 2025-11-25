@@ -430,7 +430,7 @@ function Invoke-Download {
 }
 
 # 6. Inject Unattend from main branch
-Invoke-Download -Uri "https://raw.githubusercontent.com/JustinSparksAya/OSDCloud/main/Unattend/Unattend.xml" `
+Invoke-Download -Uri "https://raw.githubusercontent.com/JustinSparksAya/OSDCloud-Test/main/Unattend/Unattend.xml" `
     -OutFile (Join-Path $panther "Unattend.xml")
 
 
@@ -485,7 +485,7 @@ Write-Host "###############################" -ForegroundColor Cyan
 
 
 # 8. Stage activation script
-Invoke-Download -Uri "https://raw.githubusercontent.com/JustinSparksAya/OSDCloud/main/Scripts/Activate-WindowsUsignOEMProductKey.ps1" `
+Invoke-Download -Uri "https://raw.githubusercontent.com/JustinSparksAya/OSDCloud-Test/main/Scripts/Activate-WindowsUsignOEMProductKey.ps1" `
     -OutFile (Join-Path $tempDir "Activate-WindowsUsignOEMProductKey.ps1")
 
 Write-Host "`r`n#####################################" -ForegroundColor Cyan
@@ -503,7 +503,7 @@ Write-Host "`r`n###############################" -ForegroundColor Cyan
 Write-Host "###Staging SetupComplete.cmd###" -ForegroundColor Cyan
 Write-Host "###############################" -ForegroundColor Cyan
 # 8. Stage SetupComplete script
-Invoke-Download -Uri "https://raw.githubusercontent.com/JustinSparksAya/OSDCloud/main/Scripts/SetupComplete.cmd" `
+Invoke-Download -Uri "https://raw.githubusercontent.com/JustinSparksAya/OSDCloud-Test/main/Scripts/SetupComplete.cmd" `
   -OutFile (Join-Path $setupDir "SetupComplete.cmd")
 
 # 9. Stage Dock drivers for Lenovo laptops
