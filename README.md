@@ -34,7 +34,7 @@ In WinPE:
 
 ```powershell
 
-Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/JustinSparksAya/OSDCloud/main/Scripts/Start-OSDCloudWrapper.ps1')
+Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/JustinSparksAya/OSDCloud-Test/main/Scripts/Start-OSDCloudWrapper.ps1')
 
 
 
